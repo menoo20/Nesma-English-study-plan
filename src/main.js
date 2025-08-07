@@ -1,27 +1,30 @@
 import './style.css'
 
 // Student data storage with actual student information
+// Use Vite's BASE_URL to ensure proper paths in both dev and production
+const BASE_URL = import.meta.env.BASE_URL;
+
 let studentsData = {
   student1: {
     name: 'Asma Muazi Al Malki',
     score: 31,
     level: 'elementary',
     notes: 'Current Level: A2 (23-40): Elementary\n\nYou handle simple conversations (e.g., shopping, hobbies) but make frequent errors.\n\nGaps: Past simple (played/went), future plans (going to), comparatives (bigger), and quantifiers (some/any).\n\nTo reach B1:\n• Focus on Grammar: Past simple irregular verbs (ate/saw), present perfect (have been), and modals (should/could).\n• Vocabulary: Travel, jobs, feelings, and common phrasal verbs (get up).\n• Practice: Watch English cartoons (e.g., Peppa Pig) with subtitles. Use grammar workbooks like English File Elementary.',
-    testFile: '/students/student1/Asma Muazi Al Malki Corrected.pdf'
+    testFile: `${BASE_URL}students/student1/Asma Muazi Al Malki Corrected.pdf`
   },
   student2: {
     name: 'Khalid Hassan Al-Ghamdi',
     score: 22,
     level: 'beginner',
     notes: 'Current Level: A1 (0-22): Beginner\n\nYou know basic phrases and simple vocabulary (e.g., colors, family, food).\nYou struggle with forming full sentences, questions, and everyday conversations.\n\nGrammar gaps: Present simple, articles (a/an/the), basic prepositions (in/on/at).\n\nTo reach A2:\n• Focus on Grammar: Present simple (e.g., I eat), plurals, and simple questions (Do you...?).\n• Vocabulary: Daily routines, household items, and common verbs.\n• Practice: Use apps like Duolingo or Memrise for foundational vocabulary. Write 3 sentences daily about your day (e.g., "I drink coffee").',
-    testFile: '/students/student2/Khalid Hassan AlGhamdi Corrected.pdf'
+    testFile: `${BASE_URL}students/student2/Khalid Hassan AlGhamdi Corrected.pdf`
   },
   student3: {
     name: 'Meshal Almutairi',
     score: 35,
     level: 'elementary',
     notes: 'Current Level: A2 (23-40): Elementary\n\nYou handle simple conversations (e.g., shopping, hobbies) but make frequent errors.\n\nGaps: Past simple (played/went), future (going to), comparatives (bigger), and quantifiers (some/any).\n\nTo reach B1:\n• Focus on Grammar: Past simple irregular verbs (ate/saw), present perfect (have been), and modals (should/could).\n• Vocabulary: Travel, jobs, feelings, and common phrasal verbs (get up).\n• Practice: Watch English cartoons (e.g., Peppa Pig) with subtitles. Use grammar workbooks like English File Elementary.',
-    testFile: '/students/student3/Mashaiel Almutairi corrections.pdf'
+    testFile: `${BASE_URL}students/student3/Mashaiel Almutairi corrections.pdf`
   }
 };
 
