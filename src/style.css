@@ -542,6 +542,10 @@ body {
   white-space: nowrap;
 }
 
+.study-plan-actions .btn-primary{
+  padding: 1rem 1.5rem !important;
+}
+
 .plan-config {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   padding: 3rem;
@@ -744,6 +748,7 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
+  text-align: center;
 }
 
 .sessions-list {
@@ -1749,5 +1754,6 @@ body {
   .study-plan-actions .btn-primary {
     width: 100%;
     min-width: auto;
+    padding: 1rem 1.5rem;
   }
 }
