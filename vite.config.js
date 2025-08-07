@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
   // Set the base path for GitHub Pages
@@ -17,6 +18,14 @@ export default defineConfig({
     
     // Minify the output
     minify: true,
+    
+    // Multi-page app configuration
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        schedule: resolve(__dirname, 'schedule.html')
+      }
+    }
   },
   
   // Configure the development server
