@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo/black-gold-sold-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesma English Course Management | Black Gold Higher Training Institute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header-container">
+          <div class="logo-section">
+            <img src="/logo/black-gold-sold-1.png" alt="Black Gold Higher Training Institute" class="company-logo">
+            <div class="logo-text">
+              <h1 class="company-name">Black Gold Higher Training Institute</h1>
+              <p class="course-subtitle">Nesma English Course Management</p>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <button class="nav-btn active" data-section="dashboard">
+              <span class="nav-icon">📊</span>
+              Dashboard
+            </button>
+            <button class="nav-btn" data-section="students">
+              <span class="nav-icon">👥</span>
+              Students
+            </button>
+            <button class="nav-btn" data-section="study-plan">
+              <span class="nav-icon">📚</span>
+              Study Plan
+            </button>
+            <a href="schedule.html" class="nav-btn nav-link">
+              <span class="nav-icon">📅</span>
+              Schedule
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="content-wrapper">
+          <!-- Dashboard Section -->
+          <section id="dashboard" class="content-section active">
+            <div class="section-header">
+              <h2>Course Overview</h2>
+              <p class="section-subtitle">Monitor your English course progress and student performance</p>
+            </div>
+            <div class="dashboard-grid">
+              <div class="dashboard-card">
+                <div class="card-icon">👥</div>
+                <div class="card-content">
+                  <h3>Total Students</h3>
+                  <div class="card-number">3</div>
+                  <p>Enrolled in the program</p>
+                </div>
+              </div>
+              <div class="dashboard-card">
+                <div class="card-icon">📅</div>
+                <div class="card-content">
+                  <h3>Course Duration</h3>
+                  <div class="card-number">1</div>
+                  <p>Month (3 days/week)</p>
+                </div>
+              </div>
+              <div class="dashboard-card">
+                <div class="card-icon">📊</div>
+                <div class="card-content">
+                  <h3>Progress Tracking</h3>
+                  <div class="card-number">✓</div>
+                  <p>Assessment & Plans</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Students Section -->
+          <section id="students" class="content-section">
+            <div class="section-header">
+              <h2>Student Management</h2>
+              <p class="section-subtitle">Manage student records, test scores, and placement assessments</p>
+            </div>
+            <div class="students-grid">
+              <div class="student-card" data-student="student1">
+                <div class="student-avatar">AM</div>
+                <div class="student-info">
+                  <h3>Asma Muazi Al Malki</h3>
+                  <p>Score: 31/70 (elementary)</p>
+                </div>
+                <div class="student-actions">
+                  <button class="btn-primary view-test" data-student="student1">
+                    <span class="btn-icon">📄</span>
+                    Test Results
+                  </button>
+                  <button class="btn-secondary view-analysis" data-student="student1">
+                    <span class="btn-icon">📊</span>
+                    View Analysis
+                  </button>
+                </div>
+              </div>
+              <div class="student-card" data-student="student2">
+                <div class="student-avatar">KH</div>
+                <div class="student-info">
+                  <h3>Khalid Hassan Al-Ghamdi</h3>
+                  <p>Score: 22/70 (beginner)</p>
+                </div>
+                <div class="student-actions">
+                  <button class="btn-primary view-test" data-student="student2">
+                    <span class="btn-icon">📄</span>
+                    Test Results
+                  </button>
+                  <button class="btn-secondary view-analysis" data-student="student2">
+                    <span class="btn-icon">📊</span>
+                    View Analysis
+                  </button>
+                </div>
+              </div>
+              <div class="student-card" data-student="student3">
+                <div class="student-avatar">MA</div>
+                <div class="student-info">
+                  <h3>Meshal Almutairi</h3>
+                  <p>Score: 35/70 (elementary)</p>
+                </div>
+                <div class="student-actions">
+                  <button class="btn-primary view-test" data-student="student3">
+                    <span class="btn-icon">📄</span>
+                    Test Results
+                  </button>
+                  <button class="btn-secondary view-analysis" data-student="student3">
+                    <span class="btn-icon">📊</span>
+                    View Analysis
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Study Plan Section -->
+          <section id="study-plan" class="content-section">
+            <div class="section-header">
+              <h2>One Month Study Plan</h2>
+              <p class="section-subtitle">Comprehensive A1 Beginner Level Curriculum</p>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="study-plan-actions">
+              <a href="schedule.html" class="btn-primary">
+                <span class="btn-icon">📅</span>
+                Configure Schedule
+              </a>
+              <button id="view-full-curriculum" class="btn-secondary">
+                <span class="btn-icon">📚</span>
+                View Full Curriculum
+              </button>
+            </div>
+            
+            <!-- Study Plan Content -->
+            <div class="study-plan-content">
+              <div class="plan-overview">
+                <h3>📚 A1 Beginner Level Study Plan</h3>
+                <div class="plan-description">
+                  <p>Based on the students' scores in the placement test, it was found that they are currently at the lower end of the <strong>A1 (Beginner) level</strong>. Therefore, this study plan is designed to reinforce fundamental language skills and help build a strong foundation in English.</p>
+                  <div class="plan-highlights">
+                    <div class="highlight-item">
+                      <span class="highlight-icon">⏰</span>
+                      <span>2 hours per session</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="highlight-icon">📅</span>
+                      <span>3 days per week</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="highlight-icon">📖</span>
+                      <span>12 sessions total</span>
+                    </div>
+                    <div class="highlight-item">
+                      <span class="highlight-icon">🎯</span>
+                      <span>4 weeks duration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weekly-breakdown">
+                <!-- Week 1 -->
+                <div class="week-card">
+                  <div class="week-header">
+                    <h4>Week 1: Introduction to Basics</h4>
+                    <span class="week-badge">Sessions 1-3</span>
+                  </div>
+                  <div class="sessions-list">
+                    <div class="session-item">
+                      <div class="session-number">1</div>
+                      <div class="session-content">
+                        <h5>Unit 1 - Introductions, greetings, and personal information</h5>
+                        <p>Focus on the verb "to be"</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">2</div>
+                      <div class="session-content">
+                        <h5>Unit 2 - Describing people</h5>
+                        <p>Focus on appearance, subject pronouns, and basic adjectives</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">3</div>
+                      <div class="session-content">
+                        <h5>Unit 3 - Talking about daily routines</h5>
+                        <p>Introduction to present simple tense</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="week-card">
+                  <div class="week-header">
+                    <h4>Week 2: Everyday Activities & Time Management</h4>
+                    <span class="week-badge">Sessions 4-6</span>
+                  </div>
+                  <div class="sessions-list">
+                    <div class="session-item">
+                      <div class="session-number">4</div>
+                      <div class="session-content">
+                        <h5>Unit 4 - Talking about places</h5>
+                        <p>There is/there are, prepositions of place</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">5</div>
+                      <div class="session-content">
+                        <h5>Unit 5 - Talking about likes/dislikes and hobbies</h5>
+                        <p>Using "like" with verb + gerund</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">6</div>
+                      <div class="session-content">
+                        <h5>Unit 6 - Asking for and giving directions</h5>
+                        <p>Imperatives, can for requests</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="week-card">
+                  <div class="week-header">
+                    <h4>Week 3: Expanding Basic Conversations</h4>
+                    <span class="week-badge">Sessions 7-9</span>
+                  </div>
+                  <div class="sessions-list">
+                    <div class="session-item">
+                      <div class="session-number">7</div>
+                      <div class="session-content">
+                        <h5>Unit 7 - Talking about past events</h5>
+                        <p>Simple past tense</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">8</div>
+                      <div class="session-content">
+                        <h5>Unit 8 - Making future plans</h5>
+                        <p>Be going to for future intentions</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">9</div>
+                      <div class="session-content">
+                        <h5>Unit 9 - Talking about personality</h5>
+                        <p>Adjectives to describe character traits</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="week-card">
+                  <div class="week-header">
+                    <h4>Week 4: Wrapping Up and Practicing</h4>
+                    <span class="week-badge">Sessions 10-12</span>
+                  </div>
+                  <div class="sessions-list">
+                    <div class="session-item">
+                      <div class="session-number">10</div>
+                      <div class="session-content">
+                        <h5>Unit 10 - Talking about daily routines in third person</h5>
+                        <p>Focus on third person singular in present simple</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">11</div>
+                      <div class="session-content">
+                        <h5>Review and Practice: Units 1-5</h5>
+                        <p>Reinforce with speaking and writing exercises</p>
+                      </div>
+                    </div>
+                    <div class="session-item">
+                      <div class="session-number">12</div>
+                      <div class="session-content">
+                        <h5>Review and Practice: Units 6-10</h5>
+                        <p>Reinforce with listening and role-play activities</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="plan-footer">
+                <div class="plan-summary">
+                  <p><strong>This plan ensures progressive skill building</strong> with time for practice and revision, focusing on foundational language use and everyday communication.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div id="study-calendar" class="calendar-container">
+              <!-- Calendar will be generated here -->
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>Black Gold Higher Training Institute</h4>
+              <p>Empowering professionals through quality English education</p>
+            </div>
+            <div class="footer-section">
+              <h4>Contact</h4>
+              <p>Email: info@blackgoldinstitute.com</p>
+              <p>Phone: +966 XXX XXX XXX</p>
+            </div>
+            <div class="footer-section">
+              <h4>Course Information</h4>
+              <p>Duration: 1 Month</p>
+              <p>Schedule: 3 days per week</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Black Gold Higher Training Institute. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Modal for PDF Viewer -->
+      <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 id="modal-title">Placement Test</h3>
+          <div id="pdf-viewer">
+            <p>PDF viewer will be loaded here</p>
+            <div class="pdf-placeholder">
+              <div class="upload-area">
+                <p>📄 Upload placement test PDF for this student</p>
+                <input type="file" id="pdf-upload" accept=".pdf" style="display: none;">
+                <button class="btn-primary" onclick="document.getElementById('pdf-upload').click()">Choose PDF File</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Student Analysis -->
+      <div id="analysis-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 id="analysis-title">Student Level Analysis</h3>
+          <div id="analysis-content">
+            <div class="analysis-header">
+              <div class="student-score">
+                <span class="score-label">Test Score:</span>
+                <span class="score-value" id="analysis-score">0/70</span>
+              </div>
+              <div class="student-level">
+                <span class="level-label">Current Level:</span>
+                <span class="level-badge" id="analysis-level">Elementary</span>
+              </div>
+            </div>
+            <div class="analysis-details">
+              <h4>📋 Assessment Details</h4>
+              <div id="analysis-notes" class="notes-content">
+                <!-- Analysis content will be populated here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

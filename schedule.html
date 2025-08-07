@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Configuration - Black Gold Higher Training Institute</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="/logo/black-gold-sold-1.png" alt="Black Gold Higher Training Institute" class="company-logo">
+        <div class="logo-text">
+          <h1 class="company-name">Black Gold Higher Training Institute</h1>
+          <p class="course-subtitle">Nesma English Course Management</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-btn nav-link">
+          <span class="nav-icon">🏠</span>
+          Dashboard
+        </a>
+        <a href="schedule.html" class="nav-btn nav-link active">
+          <span class="nav-icon">📅</span>
+          Schedule
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="coming-soon-section">
+        <div class="coming-soon-card">
+          <div class="coming-soon-icon">🚧</div>
+          <h3 class="coming-soon-title">Schedule Configuration Coming Soon</h3>
+          <p class="coming-soon-message">
+            The detailed course schedule and configuration tools are currently being prepared. 
+            The schedule will be provided by the instructor and made available here soon.
+          </p>
+          <div class="coming-soon-features">
+            <h4>What's Coming:</h4>
+            <ul>
+              <li>📅 Interactive calendar with class dates</li>
+              <li>⏰ Flexible time slot selection</li>
+              <li>📋 Automatic schedule generation</li>
+              <li>📧 Schedule notifications</li>
+              <li>🔄 Easy rescheduling options</li>
+            </ul>
+          </div>
+          <div class="coming-soon-actions">
+            <a href="index.html" class="btn-primary">
+              <span class="btn-icon">←</span>
+              Back to Dashboard
+            </a>
+            <button class="btn-secondary" onclick="showNotification('Schedule updates will be announced soon!', 'info')">
+              <span class="btn-icon">�</span>
+              Notify Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Black Gold Higher Training Institute. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/schedule.js"></script>
+</body>
+</html>
